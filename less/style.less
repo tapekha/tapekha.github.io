@@ -1,0 +1,471 @@
+@import url(../css/style.css);
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+@fontBase: 'Josefin Sans',sans-serif;
+@fontSub: 'Times New Roman',sans-serif;
+
+@fontSizeBase: 16px;
+
+@themePrimaryColor: #5474fd;
+
+h1 {
+	font-size: @fontSizeBase + 20;
+}
+
+h2 {
+
+}
+
+h5 {
+
+}
+
+p {
+	line-height: 26px;
+	font-size: @fontSizeBase;
+}
+
+a {
+	color: #333333;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.ba-button {
+
+
+	&.small-button {
+		font-size: @fontSizeBase - 2;
+		padding: 10px 20px;
+	}
+
+	&.search-icon {
+
+	}
+}
+
+
+body{
+	font: 400 16px/1.6 @fontBase;
+	color:  #e8e8e8;
+	letter-spacing: 0.1em;
+}
+
+
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1150px;
+}
+h1,h2,h3,h4,h5{
+	font-weight: 700;
+	margin: 0;
+
+}
+a{
+	text-decoration: none;
+
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color: @themePrimaryColor;
+	border: 2px solid ;
+	padding-right: 30px;
+	font-size: 16px;
+	padding-left: 33px;
+}
+.ba-button img{
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background: @themePrimaryColor;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	border: 0 solid;
+}
+
+.ba-header{
+	background: @themePrimaryColor url(../images/intro.jpg) 50% no-repeat;
+	background-size: cover;
+	padding-top: 95px;
+	min-height: 100vh;
+}
+.ba-intro{
+	padding-top: 260px;
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ba-intro__title{
+	font-size: 48px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 0;
+}
+.ba-intro p{
+	margin: 0;
+	font-size: 22px;
+	letter-spacing: 0.31em;
+	margin-bottom: 50px;
+	position: relative;
+
+}
+.ba-search{
+	max-width: 650px;
+	background: #FFF;
+}
+.ba-form{
+	line-height: 60px;
+}
+.ba-form [name="search"]{
+	width: 500px;
+	text-align: center;
+	line-height: 60px;
+	border: none;
+}
+.ba-scroll{
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	position:absolute;
+	left: 50%;
+	bottom: 120px;
+	line-height: 0.2em;
+	text-decoration: none;
+	transform: translateX(-50%);
+
+}
+.ba-scroll svg{
+	display: inline-block;
+	vertical-align: middle;
+	position:absolute;
+	fill:currentColor;
+	top: 15px;
+	left: 37px;
+}
+
+.ba-section-menu{
+	background: @themePrimaryColor;
+	color: #ffffff;
+	text-transform: uppercase
+
+}
+.ba-header-bar{
+	display: flex;
+	justify-content: space-between;
+
+}
+.ba-bar-title{
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+.ba-menu{
+	display: flex;
+	list-style: none;
+	padding-top: 15px;
+
+}
+.ba-menu a{
+	font-size: 14px;
+	font-family: Aleo,sans-serif;
+	color: #FFF;
+	padding-left: 40px;
+	padding-top: 35px;
+	margin: 0;
+	align-self: center;
+}
+.ba-menu a:hover{
+	color: #ccc;
+}
+
+.ba-container-explore{
+	padding-top: 100px;
+	padding-bottom: 132px;
+
+}
+.ba-section-explore{
+	background: url(../images/castle.jpg) 50% no-repeat;
+	background-size: cover;
+}
+.ba-explore-title{
+	font-size: 36px;
+}
+.ba-explore-col{
+	padding-top: 85px;
+}
+.ba-explore-col p{
+	margin-bottom: 35px;
+
+
+}
+.ba-button--explore{
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: #FFF;
+	border: none;
+	line-height: 60px;
+	padding-left: 38px;
+	padding-right: 38px;
+}
+.ba-explore-img1{
+	padding-left: 65px;
+}
+.ba-explore-img2{
+	float: right;
+}
+
+.ba-section-how-it-works{
+	background: url(../images/how-it-dots.png) no-repeat;
+	background-color: #333333;
+	background-position: 48% 15%;
+	padding: 95px 0 70px;
+}
+.ba-container-how-it-works{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; 
+}
+
+.how-it-works__img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 30%;
+    cursor: pointer; 
+}
+.how-it-works__text {
+    font-size: 36px;
+    color: #e8e8e8;
+    text-transform: capitalize; 
+}
+
+.how-it-works__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 0px 27px 50px #333333;
+            box-shadow: 0px 0px 27px 50px #333333;
+    -webkit-box-shadow: inset 0px 0px 27px 44px #333333;
+            box-shadow: inset 0px 0px 27px 44px #333333; 
+}
+.ba-section-country-info {
+    padding-top: 229px;
+    padding-bottom: 100px;
+    background: url("../images/house.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.ba-section-country-info.bg-2 {
+    background: url("../images/sea.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.ba-section-country-info .country-inner-description {
+    max-width: 540px;
+    background-color: rgba(0,0,0,0.9);
+    box-sizing: border-box;
+    padding: 45px 30px 50px 30px;
+}
+
+.ba-section-country-info.reverse .country-inner-description {
+    float: right;
+}
+
+.ba-section-country-info:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.ba-section-country-info .country-inner-description .country-label {
+    margin-bottom: 19px;
+}
+
+.ba-section-country-info .country-inner-description p {
+    line-height: 26px;
+    font-weight: normal;
+    margin: 0 0 39px 0;
+}
+
+.ba-section-country-info .country-inner-description .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.ba-section-about {
+    padding-bottom: 200px;
+    background: url("../images/travelman.jpg") no-repeat top center;
+    background-size: cover;
+    padding-top: 114px;
+    min-height: 732px;
+    box-sizing: border-box;
+}
+
+.ba-section-about h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 92px 0;
+    font-size: 36px;
+}
+
+.ba-section-about .inner-description-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ba-section-about .image-wrap {
+    max-width: 445px;
+    flex: 0 0 445px;
+    min-height: 284px;
+    background: url("../images/tmp-001.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.ba-section-about .text-wrap {
+    max-width: calc(100% - 445px);
+    flex: 0 0 calc(100% - 445px);
+    background-color: #333333;
+    padding: 46px 52px 20px 58px;
+    box-sizing: border-box;
+}
+
+.ba-section-about .text-wrap h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.ba-section-about .text-wrap p {
+    text-indent: 32px;
+    margin: 0;
+    padding-top: 14px;
+    line-height: 26px;
+    background: url("../images/arrows-deco.png") no-repeat left top;
+}
+
+.ba-footer {
+    background-color: #232323;
+    padding-top: 118px;
+    padding-bottom: 50px;
+}
+
+.ba-footer .footer-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ba-footer .sub-title {
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.ba-social-links {
+    text-align: center;
+}
+
+.ba-social-links a {
+    margin-left: 16px;
+}
+
+.ba-social-links a:first-child {
+    margin-left: 0;
+}
+
+.ba-social-links a:before {
+    color: #fff;
+}
+
+.ba-social-links a:hover:before {
+    color: #5474fd;
+}
+
+.ba-header .ba-form [name=search] {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 170px;
+    background-color: #fff;
+    height: 60px;
+}
+
+.ba-form {
+    position: relative;
+}
+
+.ba-header .ba-button {
+    width: 146px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    height: 56px;
+    padding-left: 34px;
+    text-transform: uppercase;
+    line-height: 56px;
+    text-align: left;
+}
+
+.ba-header .ba-button img {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    right: 15px;
+}
+
+
